@@ -9,7 +9,7 @@ import com.hotdl.springtutorial.HelloApi;
 public class HelloTest {
 	@Test
 	public void testHelloWorld() {
-		ApplicationContext context = new ClassPathXmlApplicationContext("springtutorial/helloworld.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("helloworld.xml");
 		HelloApi helloApi = context.getBean("hello", HelloApi.class);
 		helloApi.sayHello();
 	}
